@@ -14,3 +14,10 @@ def home():
     )
     # noinspection PyUnresolvedReferences
     return render_template('index.html', **context)
+
+
+@campaign_manager.route('/land.html')
+def landing_auth():
+    """OSM auth landing page.
+    """
+    return render_template('land.html')
